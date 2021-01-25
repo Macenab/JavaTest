@@ -1,0 +1,55 @@
+class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(4);
+    numbers.add(23);
+    numbers.add(54);
+    numbers.add(27);
+
+    Iterator<Integer> it = numbers.iterator();
+
+    while (it.hasNext()) {
+      Integer i = it.next();
+      if (i < 10) {
+        it.remove();
+      }
+    }
+    System.out.println(numbers);
+  }
+}
+
+
+
+class Main {
+  public static void main(String[] args){
+    Integer myInt = 3;
+    Double myDouble = 3.99;
+    Character myChar = 'A';
+    System.out.println(myInt);
+    System.out.println(myDouble);
+    System.out.println(myChar);
+  }
+}
+
+
+class Main {
+  public static void main(String[] args){
+    Integer myInt = 3;
+    Double myDouble = 3.99;
+    Character myChar = 'A';
+    System.out.println(myInt.intValue());
+    System.out.println(myDouble.doubleValue());
+    System.out.println(myChar.charValue());
+  }
+}
+
+ ///toString(); method
+ 
+class Main {
+  public static void main(String[] args){
+    Integer myInt = 100;
+    String myString = myInt.toString();
+
+    System.out.println(myString.length());
+  }
+}

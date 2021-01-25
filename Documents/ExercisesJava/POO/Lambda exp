@@ -1,0 +1,48 @@
+import java.util.function.Consumer;
+import java.util.ArrayList;
+
+/*
+public class Main {
+  public static void main(String[] args){
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(2);
+    numbers.add(6);
+    numbers.add(7);
+    numbers.forEach( (n) -> {System.out.println(n); });
+  }
+}
+
+
+public class Main {
+  public static void main(String[] args){
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(4);
+    numbers.add(8);
+    numbers.add(2);
+
+    Consumer<Integer> method = (n) -> { System.out.println(n); };
+    numbers.forEach( method );
+  }
+}
+*/
+
+
+/*
+interface StringFunction {
+  String run(String str);
+}
+public class Main {
+  public static void main(String[] args){
+    StringFunction exclaim = (s) -> s + "!";
+    StringFunction ask = (s) -> s + "?";
+    printFormatted("Hello", exclaim);
+    printFormatted("Hello", ask);
+  }
+  public static void printFormatted(String str, StringFunction format){
+    String result =  format.run(str);
+    System.out.println(result);
+  }
+}
+*/

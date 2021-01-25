@@ -1,0 +1,32 @@
+/*
+
+class Main {
+  public static void main(String[] args){
+    try {
+      int[] numbers = { 1,2,3};
+        System.out.print(numbers[10]);      
+      } catch (Exception e){
+        System.out.println("Deu bret, parça");      
+    } finally {
+      System.out.println("O try-catch, terminou");
+    }
+  }
+}
+*/
+///////////check age /////////////////// 
+
+
+class Main {
+  static void checkAge(int age){
+    if (age < 18){
+      throw new ArithmeticException("Access Denied - You must be at least 18 years old");
+    } else {
+      System.out.println("Accres Granted - You're old enough");
+    }
+  }
+
+  public static void main(String[] args){
+  checkAge(15);
+  }
+}
+
